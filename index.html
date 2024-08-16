@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+   
+
+
+<nav id="navbar-m">
+
+    <div class="navbar bg-[#4c68ff]  text-neutral-content flex justify-between  px-[1.4rem] ">
+        <div class="head-logo">
+            <p class="nav-heading text-[white] text-[1.8rem]">Blogging App</p>
+
+        </div>
+
+        <div class="nav-icons flex gap-4 justify-center items-center">
+
+            <div class="users-name">
+                <h2>.....</h2>
+            </div>
+
+            <div class="Logout-div">
+
+                <button id="logout">Logout</button>  <br><br>
+                <button class="btn btn-outline text-center"><a href="./post.html">See Your Blog</a></button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+
+<!-- main  -->
+<main>
+
+    <div id="blog-post-form">
+        <h2 id="form-title">Create a New Blog Post</h2>
+        <form id="form">
+            <label for="title-input" id="title-label">Title:</label>
+            <input type="text" id="title-input" name="title" required>
+
+            <label for="description-input" id="description-label">Description:</label>
+            <textarea id="description-input" name="description" rows="8" required></textarea>
+
+            <button type="submit" id="publish-button">Publish Blog</button>
+        </form>
+    </div>
+
+    <div id="new">
+      
+    </div>
+
+</main>
+
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
